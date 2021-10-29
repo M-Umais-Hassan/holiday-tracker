@@ -1,0 +1,4 @@
+// Calender Action Types
+export const HOLIDAYS_REQUEST = "HOLIDAYS_REQUEST";
+export const HOLIDAYS_SUCCESS = "HOLIDAYS_SUCCESS";
+export const HOLIDAYS_FAILURE = "HOLIDAYS_FAILURE";
