@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 
 // components
 import Navbar from "./Components/Navbar";
@@ -23,7 +22,7 @@ const App = () => {
       year,
     };
     dispatch(getHolidays(body));
-  }, [selectedCountry, year]);
+  }, [selectedCountry, year, dispatch]);
 
   return (
     <>
