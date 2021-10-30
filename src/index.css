@@ -12,13 +12,16 @@ code {
     monospace;
 }
 
+:root {
+  --primary: #3174ad;
+}
+
 .container {
   margin: 100px 50px;
 }
 
 .css-b62m3t-container {
   z-index: 5;
-  margin: 25px 0;
 }
 
 .error {
@@ -53,5 +56,21 @@ code {
 }
 
 .navbar h2 {
-  color: #3174ad;
+  color: var(--primary);
+}
+
+.select__area {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.select__area .css-b62m3t-container {
+  width: calc(50% - 40px);
+  margin: 0 20px;
+}
+
+.container h1 {
+  color: var(--primary);
+  text-align: center;
 }

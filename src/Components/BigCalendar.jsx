@@ -5,9 +5,10 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 // redux
 import { useSelector } from "react-redux";
 
+const localizer = momentLocalizer(moment);
+
 const BigCalender = () => {
   const { holidays, error } = useSelector((state) => state.holidaysReducer);
-  const localizer = momentLocalizer(moment);
 
   if (error && error.message) {
     return (
